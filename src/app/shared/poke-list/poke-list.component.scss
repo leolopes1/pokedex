@@ -1,4 +1,5 @@
 @import '../../../config-scss/rem-calc.scss';
+@import '../../../config-scss/background-type.scss';
 
 
 :host {
@@ -13,14 +14,15 @@
         .pokemon {
             position: relative;
             display: flex;
-            width: calc(49% - 2.5rem);
-            height: rem-calc(157 - 40);
+            width: calc(30% - 2.5rem);
+            height: rem-calc(157);
             padding: rem-calc(20);
             background: var(--branco);
             border-radius: rem-calc(10);
             margin-bottom: rem-calc(10);
             text-decoration: none;
             color: var(--color-primary);
+            flex-direction: column;
 
             &__status {
                 h2 {
@@ -55,7 +57,7 @@
             }
 
             &__image {
-                position: absolute;
+                // position: absolute;
                 height: rem-calc(90);
                 width: rem-calc(110);
                 display: flex;
